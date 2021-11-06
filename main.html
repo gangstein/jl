@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    href="./styles/common.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./styles/main.css"
+  >
+  <title>Document</title>
+</head>
+<body>
+<main class="main">
+  <h1 class="visually-hidden">Карточка абонента</h1>
+  <ol class="main__tab-panel tab-panel">
+    <li class="tab-panel__tab tab">
+      <a
+        href="#oper"
+        class="tab__link"
+      >
+        Oper
+      </a>
+    </li>
+
+    <li class="tab-panel__tab tab">
+      <a
+        href="#abon"
+        class="tab__link"
+      >
+        Abon
+      </a>
+    </li>
+
+    <li class="tab-panel__tab tab">
+      <a
+        href="#service"
+        class="tab__link"
+      >
+        Service
+      </a>
+    </li>
+
+    <li class="tab-panel__tab tab">
+      <a
+        href="#location"
+        class="tab__link"
+      >
+        Location
+      </a>
+    </li>
+
+    <li class="tab-panel__tab tab">
+      <a
+        href="#tech"
+        class="tab__link"
+      >
+        Tech
+      </a>
+    </li>
+
+    <li class="tab-panel__tab tab">
+      <a
+        href="#links"
+        class="tab__link"
+      >
+        Links
+      </a>
+    </li>
+  </ol>
+
+  <div class="main__content">
+    <section
+      class="main__section section"
+      id="oper"
+    >
+      <div class="section__content oper">
+        <h2 class="section__content-h2">Section #1 - Oper Info</h2>
+
+        <ol class="oper__list list">
+          <li class="list__item">
+            Информация(строка) из "Мониторинга" до свича абонента
+          </li>
+
+          <li class="list__item">
+            Актуальная заявка абонента (из багса) + исполнители
+          </li>
+
+          <li class="list__item">
+            Protocol/Session (#8736487236423)
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section
+      class="main__section section"
+      id="abon"
+    >
+      <div class="section__content abon">
+        <h2 class="section__content-h2">Section #2 - Abon Info</h2>
+
+        <div class="abon__content">
+          <ul class="abon__column">
+            <li class="abon__login">st23456
+              <span class="abon__modifier">Модификатор</span>
+            </li>
+
+            <li class="abon__name">Сидоров Василий Петрович
+              <span class="abon__badge badge badge--active">статус</span>
+              <span class="abon__badge badge badge--inactive">статус</span>
+              <span class="abon__badge badge">статус</span>
+            </li>
+
+            <li class="abon__address">г. Таганрог, ул. Красных Революционеров, д. 1, кв. 5
+              <span class="abon__checker checker checker--active"></span>
+              <span class="abon__checker checker"></span>
+            </li>
+
+            <li class="abon__tel">+7(908)123-45-67
+              <button class="button abon__btn">+ Доп. телефон</button>
+            </li>
+
+            <li class="abon__comment">
+              <textarea
+                aria-label="Комментарий"
+                class="abon__textarea"
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="7"
+                disabled
+              >Комментарий (без возможности правки)</textarea>
+            </li>
+          </ul>
+
+          <div class="abon__column appeal">
+            <h3 class="abon__headline">Для оператора</h3>
+
+            <div class="appeal__headline">
+              <h4>Обращения</h4>
+              <button class="button">+ Добавить</button>
+            </div>
+
+            <ul class="appeal__list">
+              <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque harum hic quia quidem tempora? Animi at
+                consequatur dolorem eaque eos in quos saepe suscipit tempora, tenetur? Quae, sint suscipit?
+              </li>
+              <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque harum hic quia quidem tempora? Animi at
+                consequatur dolorem eaque eos in quos saepe suscipit tempora, tenetur? Quae, sint suscipit?
+              </li>
+              <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque harum hic quia quidem tempora? Animi at
+                consequatur dolorem eaque eos in quos saepe suscipit tempora, tenetur? Quae, sint suscipit?
+              </li>
+              <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque harum hic quia quidem tempora? Animi at
+                consequatur dolorem eaque eos in quos saepe suscipit tempora, tenetur? Quae, sint suscipit?
+              </li>
+              <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque harum hic quia quidem tempora? Animi at
+                consequatur dolorem eaque eos in quos saepe suscipit tempora, tenetur? Quae, sint suscipit?
+              </li>
+              <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque harum hic quia quidem tempora? Animi at
+                consequatur dolorem eaque eos in quos saepe suscipit tempora, tenetur? Quae, sint suscipit?
+              </li>
+              <li class="list__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque harum hic quia quidem tempora? Animi at
+                consequatur dolorem eaque eos in quos saepe suscipit tempora, tenetur? Quae, sint suscipit?
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="main__section section"
+      id="service"
+    >
+      <div class="section__content service">
+        <h2 class="section__content-h2">Section #3 - Service Info</h2>
+
+        <div class="service__column-wrapper">
+          <div class="service__column">
+            <div class="service__period service-period">
+              <span class="service-period__title">Расчетный период: 23.12.2012</span>
+
+              <div class="service-period__state">
+                <span>БАЛАНС/СКИДКА/СОСТОЯНИЕ</span>
+                <button class="service-period__btn button">Памятка</button>
+              </div>
+
+              <div class="service-period__btns">
+                <button class="service-period__btn button">Предача данных</button>
+
+                <button class="service-period__btn button">Отложенный платеж</button>
+              </div>
+            </div>
+            <div class="service__info">
+              <h3>Данные об услугах</h3>
+
+              <span class="service__item">
+                Услуга/(IP-адрес/MAC/SN)/Тариф/Стоимость
+              </span>
+            </div>
+          </div>
+
+          <div class="service__column">
+            <div class="service__excerpt">
+              <h3>Выписка</h3>
+
+              <ul class="service__list">
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+
+            <div class="service__equipment">
+              <h3>Оборудование</h3>
+
+              <ul class="service__list">
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="main__section section"
+      id="location"
+    >
+      <div class="section__content location">
+        <h2 class="section__content-h2">Section #4 - Location Info</h2>
+
+        <ol class="location__list list">
+          <li class="list__item">
+            Этот абонент может быть подключен по IPoE
+          </li>
+
+          <li class="list__item">
+            Дом подключен к сети кабельного вещания
+          </li>
+
+          <li class="list__item">
+            Дом подключен к коллективной антенне
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section
+      class="main__section section"
+      id="tech"
+    >
+      <div class="section__content tech">
+        <h2 class="section__content-h2">Section #5 - Tech Info</h2>
+
+        <div class="tech__column-wrapper">
+          <div class="tech__column info">
+            <div class="tech__info">
+              <ul class="tech__list">
+                <li class="tech__list-item">switch/port Модель свитча</li>
+                <li class="tech__list-item">Адрес</li>
+                <li class="tech__list-item">ip-address / QinQ</li>
+                <li class="tech__list-item">Текущий db Grop</li>
+                <li class="tech__list-item">Start db</li>
+                <li class="tech__list-item">Комментарий</li>
+              </ul>
+
+              <div class="tech__info-btns">
+                <button class="tech__info-btn button">ДИАГНОСТИКА</button>
+                <button class="tech__info-btn tech__info-btn--margin button">Terminal(-->ip)</button>
+
+                <button class="tech__info-btn button">Заявка Техники</button>
+                <button class="tech__info-btn button">Заявка Допы</button>
+                <button class="tech__info-btn button">Заявка NOC</button>
+              </div>
+            </div>
+
+            <div class="tech__downtime downtime">
+              <h3>DownTime</h3>
+              <ul class="downtime__list">
+                <li class="list__item">Начало/Конец/Час.мин/Коммент</li>
+                <li class="list__item">Начало/Конец/Час.мин/Коммент</li>
+                <li class="list__item">Начало/Конец/Час.мин/Коммент</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tech__column">
+            <ul class="tab-panel tech-tab-panel">
+              <li>
+                <input
+                  name="tech"
+                  type="radio"
+                  class="tech-tab-panel__input "
+                  id="session"
+                  checked
+                >
+                <label
+                  class="tech-tab-panel__label tab"
+                  for="session"
+                >Сессии</label>
+
+                <div
+                  data-content="session"
+                  class="tech-content"
+                >
+                  <h3>Сессии</h3>
+
+                  <ul class="list session-list">
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <input
+                  name="tech"
+                  type="radio"
+                  class="tech-tab-panel__input "
+                  id="bid"
+                >
+                <label
+                  class="tech-tab-panel__label tab"
+                  for="bid"
+                >Заявки(тех+доп+подк)</label>
+
+                <div
+                  data-content="bid"
+                  class="tech-content"
+                >
+                  <h3>Заявки(тех+доп+подк)</h3>
+
+                  <ul class="list bid-list">
+                    <li class="list__item">Lorem ipsum dolor sit amet.z</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.z</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.z</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.z</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <input
+                  name="tech"
+                  type="radio"
+                  class="tech-tab-panel__input "
+                  id="graph"
+                >
+                <label
+                  class="tech-tab-panel__label tab"
+                  for="graph"
+                >Графики</label>
+
+                <div
+                  data-content="graph"
+                  class="tech-content"
+                >
+                  <h3>Графики</h3>
+
+                  <div class="tech-content__images">
+                    <img
+                      class="tech-content__img"
+                      src="./assets/produce_monthly.png"
+                      alt="график"
+                    >
+
+                    <img
+                      class="tech-content__img"
+                      src="./assets/produce_monthly.png"
+                      alt="график"
+                    >
+
+                    <div class="tech-content__graph-info">
+                      Графики из карточки железки
+                      <ul class="tech-content__graph-list">
+                        <li>порт клиента</li>
+                        <li>аплинк порт</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <input
+                  name="tech"
+                  type="radio"
+                  class="tech-tab-panel__input "
+                  id="aaa"
+                >
+                <label
+                  class="tech-tab-panel__label tab"
+                  for="aaa"
+                >ААА</label>
+
+                <div
+                  data-content="aaa"
+                  class="tech-content"
+                >
+                  <h3>ААА</h3>
+
+                  <ul class="list aaa-list">
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <input
+                  name="tech"
+                  type="radio"
+                  class="tech-tab-panel__input "
+                  id="tech-comment"
+                >
+                <label
+                  class="tech-tab-panel__label tab"
+                  for="tech-comment"
+                >Комент_st</label>
+
+                <div
+                  data-content="tech-comment"
+                  class="tech-content"
+                >
+                  <h3>Комент_st</h3>
+
+                  <ul class="list tech-comment-list">
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="main__section section"
+      id="links"
+    >
+      <div class="section__content links">
+        <h2 class="section__content-h2">Section #6 - Links</h2>
+
+        <ol class="links__list l-list">
+          <li class="l-list__item">
+            <a href="#">Диагностика и инструкции</a>
+          </li>
+
+          <li class="l-list__item">
+            <a href="#">Сайт justlan поддержка</a>
+          </li>
+
+          <li class="l-list__item">
+            <a href="#">Команды по модели свича</a>
+          </li>
+
+          <li class="l-list__item">
+            <a href="#">Поиск заявок Community</a>
+          </li>
+
+          <li class="l-list__item">
+            <a href="#">NOC L2 list</a>
+          </li>
+
+          <li class="l-list__item">
+            <a href="#">NOC L2 new</a>
+          </li>
+
+          <li class="l-list__item">
+            <a href="#">Претензии list</a>
+          </li>
+
+          <li class="l-list__item">
+            <a href="#">Претензии new</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </div>
+
+  <script>
+  // const tabPanel = document.querySelector('.main__tab-panel');
+  // const content = document.querySelector('.main__content');
+  // const sections = document.querySelectorAll('.main__section');
+  // const min = Math.min(...[...sections].map(section => section.clientHeight));
+  // const wHeight = window.innerHeight;
+  // let currentTab = null;
+  // let timeout = null;
+  //
+  // function isElementInViewport(el) {
+  //   const efp = (x, y) => document.elementFromPoint(x, y);
+  //
+  //   return (
+  //     el.contains(efp(window.innerWidth / 2, min > wHeight / 2 ? wHeight / 2 : min))
+  //   );
+  // }
+  //
+  // function tabToggler(el) {
+  //   const tab = document.querySelector(`[href="#${el.id}"]`).parentElement;
+  //   tab.classList[isElementInViewport(el) ? 'add' : 'remove']('tab--active');
+  // }
+  //
+  // function scrollHelper(el) {
+  //   const sections = el.target.querySelectorAll('.main__section');
+  //
+  //   sections.forEach(tabToggler);
+  // }
+  //
+  // tabPanel.addEventListener('click', ({ target }) => {
+  //   if (target.tagName === 'A') {
+  //     currentTab = target.getAttribute('href').substr(1);
+  //   }
+  // });
+  //
+  // content.addEventListener('scroll', (e) => {
+  //   clearTimeout(timeout);
+  //   scrollHelper(e);
+  //   timeout = setTimeout(() => {
+  //     if (currentTab) {
+  //       const tabs = document.querySelectorAll('.main__tab');
+  //       tabs.forEach((tab) => {
+  //         tab.classList.remove('tab--active');
+  //       });
+  //       const tab = document.querySelector(`[href="#${currentTab}"]`).parentElement;
+  //       tab.classList.add('tab--active');
+  //     }
+  //
+  //     currentTab = null;
+  //   }, 100);
+  // });
+  // sections.forEach(tabToggler);
+  </script>
+</main>
+</body>
+</html>

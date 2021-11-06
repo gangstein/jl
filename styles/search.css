@@ -1,0 +1,152 @@
+.search-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.search-page__content {
+  padding: var(--gap-m);
+  border: var(--border);
+  border-radius: 5px;
+}
+
+.search-page__input {
+  padding: var(--gap-s);
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.search-page__search-label {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--gap-m) 0;
+}
+
+.search-page__input-content:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E");
+  position: relative;
+  top: 7px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  margin-left: -30px;
+}
+
+.search-page__input-content {
+  flex-grow: 1;
+  margin-left: var(--gap-m);
+  max-width: 380px;
+}
+
+.search-page__input-content--small {
+  max-width: 325px;
+}
+
+.search-page__input-content .search-page__input {
+  padding-left: 38px;
+}
+
+.search-page__card {
+  width: 100%;
+  padding: var(--gap-m);
+  background-color: var(--light-color);
+  border-radius: 5px;
+}
+
+.search-page__field {
+  flex-grow: 1;
+  background-color: white;
+  border: var(--border);
+  padding: var(--gap-xxs);
+  border-radius: 8px;
+  margin-left: var(--gap-m);
+  max-width: 400px;
+}
+
+.search-page__small-label {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: var(--gap-xs);
+  margin-right: var(--gap-xs);
+}
+
+.search-page__small-label:last-child {
+  margin-right: 0;
+}
+
+.search-page__field--small {
+  margin-left: var(--gap-xs);
+  max-width: 100px;
+}
+
+.search-page__field-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+  margin-bottom: var(--gap-s);
+}
+
+.search-page__field-label--margin {
+  margin-bottom: var(--gap-xxs);
+}
+
+.search-page__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-page__line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-page__btn {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: var(--font-size-xxl);
+  border-radius: 20px;
+  background-color: transparent;
+  flex-shrink: 0;
+  border: var(--border);
+  color: var(--muted-color);
+  margin-left: var(--gap-m);
+  cursor: pointer;
+}
+
+.search-page__btn:active {
+  box-shadow: 0 0 10px var(--muted-color);
+}
+
+.search-page__btn:hover::before {
+  display: block;
+}
+
+.search-page__btn::before {
+  content: 'Новая заявка';
+  font-size: var(--font-size-s);
+  position: absolute;
+  top: 115%;
+  right: 0;
+  padding: var(--gap-xs);
+  background-color: var(--primary-color);
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  display: none;
+}
+
+.search-page__link {
+  display: inline-block;
+  margin-top: var(--gap-m);
+}

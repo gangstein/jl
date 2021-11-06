@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel="stylesheet"
+    href="./styles/common.css"
+  >
+  <link
+    rel="stylesheet"
+    href="./styles/search.css"
+  >
+  <title>Поиск</title>
+</head>
+<body>
+<div class="search-page">
+  <div class="search-page__content">
+    <form
+      method="post"
+      class="search-page__form"
+    >
+      <label class="search-page__search-label">
+        Абоненты
+        <span class="search-page__input-content">
+          <input
+            name="subscriber"
+            class="search-page__input"
+            placeholder="search"
+          >
+        </span>
+      </label>
+
+      <div class="search-page__card">
+        <label class="search-page__field-label">
+          Город
+          <select
+            class="search-page__field"
+            name="city"
+            id="city"
+          >
+            <option value="voronezh">Воронеж</option>
+            <option value="saratov">Саратов</option>
+            <option value="erevan">Ереван</option>
+          </select>
+        </label>
+
+        <label class="search-page__field-label search-page__field-label--margin">
+          Улица
+          <input
+            type="text"
+            class="search-page__field"
+          >
+        </label>
+
+        <div>
+          <label class="search-page__small-label">д.<input
+            name="building"
+            class="search-page__field search-page__field--small"
+            type="text"
+          ></label>
+
+          <label class="search-page__small-label">п.<input
+            name="porch"
+            class="search-page__field search-page__field--small"
+            type="text"
+          ></label>
+
+          <label class="search-page__small-label">эт.<input
+            name="floor"
+            class="search-page__field search-page__field--small"
+            type="text"
+          ></label>
+
+          <label class="search-page__small-label">кв.<input
+            name="apartment"
+            class="search-page__field search-page__field--small"
+            type="text"
+          ></label>
+        </div>
+      </div>
+
+      <div class="search-page__line">
+        <label class="search-page__search-label">
+          Заявки
+          <span class="search-page__input-content search-page__input-content--small">
+            <input
+              name="bid"
+              class="search-page__input"
+              placeholder="search"
+            >
+          </span>
+        </label>
+
+        <button
+          class="visually-hidden"
+          aria-hidden="true"
+          tabindex="-1"
+        ></button>
+
+        <button
+          type="button"
+          class="search-page__btn"
+        >+
+        </button>
+      </div>
+    </form>
+
+    <a
+      class="search-page__link"
+      href="#"
+    >Расширенные заявки bugs.jst</a>
+  </div>
+</div>
+</body>
+</html>
