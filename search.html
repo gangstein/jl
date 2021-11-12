@@ -28,7 +28,7 @@
       class="search-page__form"
     >
       <label class="search-page__search-label">
-        Абоненты
+        Поиск
         <span class="search-page__input-content">
           <input
             name="subscriber"
@@ -88,35 +88,42 @@
       </div>
 
       <div class="search-page__line">
-        <label class="search-page__search-label">
-          Заявки
-          <span class="search-page__input-content search-page__input-content--small">
-            <input
-              name="bid"
-              class="search-page__input"
-              placeholder="search"
-            >
-          </span>
+        <label class="search-page__label">
+          Статус абонента
+          <select class="search-page__field">
+            <option>Online</option>
+            <option>Offline</option>
+          </select>
         </label>
 
-        <button
-          class="visually-hidden"
-          aria-hidden="true"
-          tabindex="-1"
-        ></button>
+        <label class="search-page__label">
+          Статус заявки
+          <select class="search-page__field">
+            <option>Закрыта</option>
+            <option>Открыта</option>
+            <option>Какой-то статус</option>
+          </select>
+        </label>
+      </div>
 
-        <button
-          type="button"
-          class="search-page__btn"
-        >+
-        </button>
+      <div class="search-page__line">
+        <button class="button search-page__submit">Найти в абонентах</button>
+        <button class="button search-page__submit">Найти в заявках</button>
       </div>
     </form>
 
-    <a
-      class="search-page__link"
-      href="#"
-    >Расширенные заявки bugs.jst</a>
+    <div class="search-page__links">
+      <a
+        class="search-page__link"
+        href="#"
+      >Расширенные заявки bugs.jst</a>
+
+      <button
+        type="button"
+        class="search-page__btn"
+      >+
+      </button>
+    </div>
   </div>
 </div>
 </body>

@@ -62,3 +62,28 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.button {
+  position: relative;
+  background-color: transparent;
+  border: var(--border);
+  color: var(--muted-color);
+  padding: var(--gap-xxs) var(--gap-m);
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(201, 212, 218, 0.18);
+}
+
+.button:active {
+  box-shadow: 0 0 10px var(--muted-color);
+}
